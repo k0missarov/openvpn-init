@@ -102,7 +102,7 @@ echo 'key-direction 1' >> /root/client-configs/base.conf
 #######################
 
 
-chmod 700 ~/client-configs/make_config.sh
+#chmod 700 ~/client-configs/make_config.sh
 
 
 for ((i=1; i <$keynum; i++))
