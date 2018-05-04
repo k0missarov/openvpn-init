@@ -13,7 +13,7 @@ cd /root/openvpn-ca
 
 ##change vars
 
-sed -i.bak -r 's/export KEY_NAME="super"/export KEY_NAME="server"/g' /root/openvpn-ca/vars
+sed -i.bak -r 's/export KEY_NAME="EasyRSA"/export KEY_NAME="server"/g' /root/openvpn-ca/vars
 
 source vars
 ./clean-all
