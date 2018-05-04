@@ -6,6 +6,7 @@ apt-get update
 apt-get install -y openvpn easy-rsa
 apt-get install -y ufw
 apt-get install -y mutt
+apt-get install -y zip
 
 make-cadir /root/openvpn-ca
 
@@ -81,7 +82,7 @@ chmod 700 /root/client-configs/files
 cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /root/client-configs/base.conf
 
 ipaddr=$(ip route get 8.8.8.8 | awk 'NR==1 {print $NF}')
-$echo $ipaddr
+#$echo $ipaddr
 
 sed -i.bak -r "s/my-server-1/$ipaddr/g" /root/client-configs/base.conf
 
