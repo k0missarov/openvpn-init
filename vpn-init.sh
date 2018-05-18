@@ -5,7 +5,7 @@ mailto='fatalick@gmail.com'
 apt-get update
 apt-get install -y openvpn easy-rsa
 apt-get install -y ufw
-apt-get install -y mutt
+apt-get install -y -q mutt
 apt-get install -y zip
 
 make-cadir /root/openvpn-ca
