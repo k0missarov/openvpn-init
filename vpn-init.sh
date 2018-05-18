@@ -1,6 +1,8 @@
 #!/bin/bash
-keynum=10 #mount of keys will be create
-mailto='fatalick@gmail.com'
+echo -n "Amount of keys will be created:"
+read keynum
+echo -n "Email address to which the keys will be sent:"
+read mailto
 
 apt-get update
 apt-get install -y openvpn easy-rsa
